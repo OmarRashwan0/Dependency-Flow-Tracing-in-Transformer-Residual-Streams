@@ -80,7 +80,6 @@ This positions the project as a mechanistic analysis of <strong>dependency flow 
   <li>a pretrained autoregressive transformer (default examples use <code>gpt2-xl</code>, with support suggested for <code>gpt-j-6B</code> and <code>gpt-neox-20b</code>),</li>
   <li>a tokenized prompt,</li>
   <li>access to internal weights and activations,</li>
-  <li>optionally a dataset of factual prompts (<code>KnownsDataset</code> is imported, though the provided examples use manually specified prompts).</li>
 </ul>
 
 <h3>2. Model access assumptions</h3>
