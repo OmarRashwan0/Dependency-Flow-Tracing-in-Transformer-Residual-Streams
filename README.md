@@ -22,7 +22,7 @@ This repository appears to address the following broader scientific question:
   <p><strong>How can we recover an explicit dependency structure for transformer computation that links source representations to downstream internal consumers and ultimately to a model’s prediction?</strong></p>
 </blockquote>
 <p>
-The code suggests a view of transformer computation as a <strong>directed flow problem</strong> over the residual stream. Under this view, embeddings and intermediate block outputs inject information into the stream; attention redistributes that information across token positions; downstream MLPs consume and transform it; and the final residual state determines the output logits. The repository operationalizes this idea by tracing source-specific residual contributions forward and testing where they matter.
+This research suggests a view of transformer computation as a <strong>directed flow problem</strong> over the residual stream. Under this view, embeddings and intermediate block outputs inject information into the stream; attention redistributes that information across token positions; downstream MLPs consume and transform it; and the final residual state determines the output logits. The repository operationalizes this idea by tracing source-specific residual contributions forward and testing where they matter.
 </p>
 <p>
 This makes the project relevant to several interpretability agendas at once:
