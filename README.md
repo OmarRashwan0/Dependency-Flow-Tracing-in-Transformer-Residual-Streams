@@ -59,7 +59,7 @@ The central hypothesis of this project is:
 Put differently, the repository tests whether a model’s answer can be explained not as a diffuse property of the entire network, but as a <strong>small computational pathway</strong> with identifiable source tokens, important intermediate MLP states, attention-mediated transport steps, and a final residual contribution to the output token.
 </p>
 <p>
-In the factual-completion setting, the intended scientific goal appears to be:
+In the factual-completion setting, the intended scientific goal is:
 </p>
 <ul>
   <li>identify which input tokens seed the relevant information,</li>
