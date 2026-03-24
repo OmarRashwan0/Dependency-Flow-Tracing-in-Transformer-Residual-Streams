@@ -16,7 +16,7 @@ The current implementation is especially tailored to <strong>factual completion 
 A central open problem in mechanistic interpretability is to move beyond surface-level visualizations and toward <strong>causal descriptions of internal computation</strong>. In transformers, information is not represented in a single place: it is repeatedly mixed through residual addition, attention-mediated token interactions, and nonlinear MLP transformations. As a consequence, understanding “where a fact lives” or “which token influences the answer” requires more than examining a single layer or head.
 </p>
 <p>
-This repository appears to address the following broader scientific question:
+This repository addresses the following broader scientific question:
 </p>
 <blockquote>
   <p><strong>How can we recover an explicit dependency structure for transformer computation that links source representations to downstream internal consumers and ultimately to a model’s prediction?</strong></p>
