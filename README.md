@@ -164,46 +164,6 @@ The extracted graph is then used to define a restricted forward pass in which on
   <li>qualitative case studies on factual prompts.</li>
 </ul>
 
-<h2>Repository Structure</h2>
-
-<h3><code>experiments/causal_trace.py</code></h3>
-<p>
-This is the most important imported dependency in the provided code. It appears to provide model/tokenizer loading (<code>ModelAndTokenizer</code>), prompt construction utilities, token-range identification, subject localization, prediction helpers, and causal tracing plotting functions. In the current project, these utilities function as the <strong>instrumentation and model-access layer</strong> on top of which the dependency-flow analysis is built.
-</p>
-
-<h3><code>util/nethook.py</code></h3>
-<p>
-This module supports model hooking and intervention. It is part of the repository’s low-level machinery for capturing intermediate activations, replacing or zeroing activations, and editing internal module inputs and outputs.
-</p>
-
-<h3><code>util/globals.py</code></h3>
-<p>
-This module appears to define repository-wide paths and configuration such as <code>DATA_DIR</code>. It supports reproducible access to datasets and cached artifacts.
-</p>
-
-<h3><code>dsets/</code></h3>
-<p>
-This package includes dataset support, notably <code>KnownsDataset</code>. Its presence strongly suggests that the intended use case is broader than a single prompt and includes <strong>factual knowledge tracing experiments</strong> over curated prompt sets.
-</p>
-
-<h3><code>scripts/colab_reqs/</code></h3>
-<p>
-This directory contains Colab installation requirements. The notebook-style workflow shown in the code is clearly intended to be runnable in Colab or similarly provisioned GPU environments.
-</p>
-
-<h3>Core analysis notebook / script</h3>
-<p>The main analysis logic in the provided code performs the following tasks:</p>
-<ul>
-  <li>capture pre-attention and pre-MLP residual states,</li>
-  <li>capture per-layer attention and MLP outputs,</li>
-  <li>compute effective layer-norm scaling,</li>
-  <li>propagate residual contributions through future attention layers,</li>
-  <li>intervene at MLP inputs and final residual inputs,</li>
-  <li>construct source→destination probability effect tensors,</li>
-  <li>discover important internal units,</li>
-  <li>extract thresholded dependency graphs,</li>
-  <li>test reduced-graph sufficiency.</li>
-</ul>
 
 <h2>Conceptual Pipeline</h2>
 <ol>
