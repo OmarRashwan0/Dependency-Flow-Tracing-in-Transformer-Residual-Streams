@@ -607,13 +607,12 @@ input_ids = mt.tokenizer.encode(input_string, return_tensors="pt").to(mt.model.d
 <h2>Citation</h2>
 <pre><code>@misc{dependency_flow_tracing_2026,
   title        = {Dependency Flow Tracing in Transformer Residual Streams},
-  author       = {Author(s) Placeholder},
+  author       = {Omar Rashwan},
   year         = {2026},
-  howpublished = {\url{https://github.com/your-org/your-repo}},
   note         = {Research code for causal dependency analysis of embeddings, attention outputs, and MLP states in autoregressive transformers}
 }</code></pre>
 
 <h2>Acknowledgments</h2>
 <p>
-This repository builds on hook-based causal tracing and transformer interpretability tooling in the broader mechanistic interpretability ecosystem. The current implementation appears especially indebted to the causal tracing infrastructure used in the ROME codebase, while extending that style of analysis toward explicit dependency-flow and circuit extraction.
+This repository builds on hook-based causal tracing and transformer interpretability tooling in the broader mechanistic interpretability ecosystem. The current implementation especially indebted to the causal tracing infrastructure used in the ROME codebase, while extending that style of analysis toward explicit dependency-flow and circuit extraction.
 </p>
