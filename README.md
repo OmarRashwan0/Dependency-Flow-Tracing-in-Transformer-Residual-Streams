@@ -8,6 +8,9 @@ This repository investigates how token-level information is transported, transfo
 The implementation builds a tracing pipeline for GPT-style causal language models that combines activation hooking, frozen-forward intervention, layerwise propagation analysis, and graph extraction. Starting from a source activation—an input embedding, an attention output, or an MLP output—the code estimates how that source is carried forward through the residual stream under the model’s realized attention pattern, then measures how subtracting that propagated contribution changes the probability of the model’s final predicted token. The result is a family of <strong>directed dependency maps</strong> over tokens, layers, and components, together with thresholded circuit-like graphs that summarize the internal pathways most responsible for a given completion.
 </p>
 <p>
+This work is intended to accompany a research paper that will be published soon. The current repository provides the computational infrastructure, experimental machinery, and visualization pipeline underlying that study.
+</p>
+<p>
 The current implementation is especially tailored to <strong>factual completion prompts</strong> (for example, country–capital queries), and is designed to expose where factual information is stored, how it is routed forward, and which intermediate components appear necessary or sufficient for the final answer.
 </p>
 
