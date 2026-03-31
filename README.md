@@ -290,23 +290,7 @@ Interpretation: this is a simpler ablation baseline against which propagated dep
 </p>
 <p><img src="docs/figures/figure_7_zeroed_mlp_heatmap.png" alt="Figure 7: Single-MLP Zeroing Heatmap"></p>
 
-<h3>Figure 8. Root-MLP Reachability Graph Through Attention Consumers</h3>
-<p>
-A directed graph rooted at important MLPs whose outgoing effects are traced through attention consumers and later attention nodes.
-</p>
-<p>
-Interpretation: this figure is useful for understanding where prediction-critical MLP content is routed after it is written into the residual stream.
-</p>
-<p><img src="docs/figures/figure_8_root_attention_graph.png" alt="Figure 8: Root-MLP Reachability Graph Through Attention Consumers"></p>
 
-<h3>Figure 9. Thresholded MLP Dependency Graph</h3>
-<p>
-A directed graph over MLP nodes where an edge indicates that a destination MLP measurably depends on an upstream source MLP.
-</p>
-<p>
-Interpretation: this is a circuit-like representation of cross-layer MLP dependency structure.
-</p>
-<p><img src="docs/figures/figure_9_mlp_graph.png" alt="Figure 9: Thresholded MLP Dependency Graph"></p>
 
 <h3>Figure 10. Embedding → MLP Dependency Heatmap</h3>
 <p>
