@@ -301,23 +301,7 @@ Interpretation: this reveals which MLP states consume information seeded by part
 </p>
 <p><img src="docs/figures/figure_10_embedding_to_mlp_heatmap.png" alt="Figure 10: Embedding to MLP Dependency Heatmap"></p>
 
-<h3>Figure 11. Maximum Dependency Strength per Source Embedding</h3>
-<p>
-A summary bar chart showing, for each source embedding token, the maximum downstream embedding→MLP dependency strength across all destination MLPs.
-</p>
-<p>
-Interpretation: this highlights the most globally influential source tokens.
-</p>
-<p><img src="docs/figures/figure_11_embedding_max_effect.png" alt="Figure 11: Maximum Dependency Strength per Source Embedding"></p>
 
-<h3>Figure 12. Thresholded Embedding → MLP Graph</h3>
-<p>
-A bipartite directed graph connecting source embedding tokens to downstream MLP nodes when the measured dependency exceeds a threshold.
-</p>
-<p>
-Interpretation: this makes explicit which MLP computations appear to consume information from which prompt tokens.
-</p>
-<p><img src="docs/figures/figure_12_embedding_mlp_graph.png" alt="Figure 12: Thresholded Embedding to MLP Graph"></p>
 
 <h3>Figure 13. Merged Embedding+MLP Dependency Graph Anchored on Important MLPs</h3>
 <p>
