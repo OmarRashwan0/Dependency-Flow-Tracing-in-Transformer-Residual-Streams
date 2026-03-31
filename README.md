@@ -291,8 +291,7 @@ Interpretation: this is a simpler ablation baseline against which propagated dep
 <p><img src="docs/figures/figure_7_zeroed_mlp_heatmap.png" alt="Figure 7: Single-MLP Zeroing Heatmap"></p>
 
 
-
-<h3>Figure 10. Embedding → MLP Dependency Heatmap</h3>
+<h3>Figure 8. Embedding → MLP Dependency Heatmap</h3>
 <p>
 A heatmap with source embeddings on one axis and destination MLPs on the other, where color reflects the downstream effect of subtracting the propagated embedding contribution at the destination MLP input.
 </p>
@@ -302,17 +301,7 @@ Interpretation: this reveals which MLP states consume information seeded by part
 <p><img src="docs/figures/figure_10_embedding_to_mlp_heatmap.png" alt="Figure 10: Embedding to MLP Dependency Heatmap"></p>
 
 
-
-<h3>Figure 13. Merged Embedding+MLP Dependency Graph Anchored on Important MLPs</h3>
-<p>
-A merged graph containing embedding→MLP and MLP→MLP edges, filtered to retain only nodes that can reach designated important MLPs.
-</p>
-<p>
-Interpretation: this is the repository’s most direct candidate circuit diagram for the final prediction.
-</p>
-<p><img src="docs/figures/figure_13_full_dependency_graph.png" alt="Figure 13: Merged Embedding+MLP Dependency Graph Anchored on Important MLPs"></p>
-
-<h3>Figure 14. Prediction Reconstruction from the Extracted Subgraph</h3>
+<h3>Figure 9. Prediction Reconstruction from the Extracted Subgraph</h3>
 <p>
 A comparison between full-model inference and restricted inference that keeps only the embeddings and MLP nodes retained by the extracted graph.
 </p>
@@ -321,7 +310,7 @@ Interpretation: if the prediction is preserved, the extracted graph is a strong 
 </p>
 <p><img src="docs/figures/figure_14_restricted_inference_comparison.png" alt="Figure 14: Prediction Reconstruction from the Extracted Subgraph"></p>
 
-<h3>Figure 15. Root-MLP Contribution Reconstruction at the Final Hidden State</h3>
+<h3>Figure 10. Root-MLP Contribution Reconstruction at the Final Hidden State</h3>
 <p>
 A figure or table comparing the model’s normal top prediction against the prediction induced by summing only the final-hidden contributions of identified root MLPs.
 </p>
